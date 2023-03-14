@@ -7,7 +7,18 @@ public class test {
         ll.printLinkedList();
         ll.getHead();
         ll.getTail();
-        
+        ll.insert(3, 2);
+        ll.getHead();
+        ll.getTail();
+        System.out.println(ll.getLength());
+        ll.printLinkedList();
+
+        ll.remove(2);
+        ll.getHead();
+        ll.getTail();
+        System.out.println(ll.getLength());
+        ll.printLinkedList();
+
         System.exit(0);
     }
 }
