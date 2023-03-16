@@ -1,3 +1,4 @@
+import datastructures.LinkedList;
 public class test {
     public static void main(String[] args) {
         LinkedList ll=new LinkedList(0);
@@ -13,11 +14,8 @@ public class test {
         System.out.println(ll.getLength());
         ll.printLinkedList();
 
-        ll.remove(2);
-        ll.getHead();
-        ll.getTail();
-        System.out.println(ll.getLength());
-        ll.printLinkedList();
+        ll.reverse();
+        ll.printLinkedList(ll.getHeadNode());
 
         System.exit(0);
     }
