@@ -1,11 +1,11 @@
-package datastructures;
+package datastructures.linkedlist;
 
-public class LinkedList {
+public class SinglyLinkedList {
     LLNode head;
     LLNode tail;
-    int length;
+    private int length;
 
-    public LinkedList(int value) {
+    public SinglyLinkedList(int value) {
         this.head = new LLNode(value);
         this.tail = this.head;
         this.length = 1;
@@ -73,10 +73,10 @@ public class LinkedList {
         } else {
             LLNode tempNode = this.head;
             for (int _temp = 1; _temp < position; _temp++) {
-                System.out.println(_temp + " " + tempNode.value);
+                System.out.println(_temp + " " + tempNode.getValue());
                 tempNode = tempNode.next;
             }
-            System.out.println(tempNode.value);
+            System.out.println(tempNode.getValue());
             if (position == this.length - 1) {
                 this.tail = tempNode;
             }
@@ -93,7 +93,7 @@ public class LinkedList {
         if (head == null) {
             System.out.println("Head: null");
         } else {
-            System.out.println("Head: " + head.value);
+            System.out.println("Head: " + head.getValue());
         }
     }
 
@@ -101,7 +101,7 @@ public class LinkedList {
         if (tail == null) {
             System.out.println("Tail: null");
         } else {
-            System.out.println("Tail: " + tail.value);
+            System.out.println("Tail: " + tail.getValue());
         }
     }
 
@@ -114,7 +114,7 @@ public class LinkedList {
             System.out.println("LinkedList has no elements");
         } else {
             while (tempNode != null) {
-                System.out.print(tempNode.value + " --> ");
+                System.out.print(tempNode.getValue() + " --> ");
                 tempNode = tempNode.next;
             }
             System.out.println();
@@ -127,7 +127,7 @@ public class LinkedList {
             System.out.println("LinkedList has no elements");
         } else {
             while (tempNode != null) {
-                System.out.print(tempNode.value + " --> ");
+                System.out.print(tempNode.getValue() + " --> ");
                 tempNode = tempNode.next;
             }
             System.out.println();
